@@ -97,51 +97,82 @@ textarea {
 
 
 html {
-  background-color: #fff;
-  height: 100%;
+    background-color: #fff;
+    height: 100%;
     width: 95%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
-  font-size: 1.25em;
-  height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 2em;
+    font-size: 1.25em;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    background : #1A535C;
+
+}
+
+header p{
+    margin: 50px 30px 60px 30px;
+    color: #F7FFF7;
+}
+header h1{
+    padding: 50px 30px 0 30px;
+    color: #F7FFF7;
+    
+
+}
+
+header, .wrapper, footer{
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-        font-weight: 300;
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row nowrap;
-        align-items: center;
+    font-weight: 300;
+ /*flow property on wrapper*/        
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-        color: #1A535C;
-        line-height: 1.5em;
-        font-size: 1em;
-        background-color: #F7FFF7;
-        height: 400px;
-        width: 30%;
-        padding: 30px;
-          border-top: 10px solid #45dcd5;
-        border-bottom: 10px solid #45dcd5;
-        
-        display : flex;
-        align-items: center;
-        justify-content: left;
-        
+    color: #1A535C;
+    line-height: 1.5em;
+    font-size: 1em;
+    background-color: #F7FFF7;
+    height: 400px;
+    width: 30%;
+    padding: 30px;
 
+/* flexbox property for columns*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .div-2{
-        border-right: 10px solid #45dcd5;
-        border-left: 10px solid #45dcd5;
+        border-right: 5px solid #1A535C;
+        border-left: 5px solid #1A535C;
 
+}
 
+footer{
+    background: #1A535C;
+    color: #F7FFF7;
+    padding: 50px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
